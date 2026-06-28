@@ -26,6 +26,10 @@ export default function SoCalLeadSystemsLandingPage() {
     return <PrivacyPolicy />;
   }
 
+  if (window.location.pathname === "/terms-and-conditions") {
+    return <TermsAndConditions />;
+  }
+
   return (
     <main className="min-h-screen overflow-hidden bg-[#020817] text-white">
       <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(59,130,246,0.18),transparent_32%),radial-gradient(circle_at_80%_25%,rgba(139,92,246,0.18),transparent_28%),radial-gradient(circle_at_50%_80%,rgba(37,99,235,0.10),transparent_30%)]" />
@@ -214,9 +218,12 @@ export default function SoCalLeadSystemsLandingPage() {
         <p>
           SoCal Lead Systems LLC <span className="mx-4 text-blue-500">•</span> info@socalleadsystems.com <span className="mx-4 text-blue-500">•</span> (619) 419-0966
         </p>
-        <p className="mt-4">
+        <p className="mt-4 flex justify-center gap-6">
           <a href="/privacy-policy" className="underline hover:text-white">
             Privacy Policy
+          </a>
+          <a href="/terms-and-conditions" className="underline hover:text-white">
+            Terms & Conditions
           </a>
         </p>
       </footer>
@@ -226,6 +233,159 @@ export default function SoCalLeadSystemsLandingPage() {
 
 function PrivacyPolicy() {
   return (
+    <LegalPage title="Privacy Policy">
+      <p className="text-slate-400">Last updated: June 28, 2026</p>
+
+      <p>
+        SoCal Lead Systems LLC respects your privacy. This Privacy Policy explains how we collect, use, and protect information when you visit our website, contact us, request a demo, or communicate with businesses using systems we provide.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-black text-white">Information We Collect</h2>
+        <p className="mt-3">
+          We may collect information you voluntarily provide, including your name, phone number, email address, business name, and any message or inquiry you submit through our website, phone, email, text message, or contact forms.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-black text-white">How We Use Information</h2>
+        <p className="mt-3">
+          We use information to respond to inquiries, provide services, operate missed-call text-back systems, improve our website, communicate with customers or potential customers, and support business follow-up.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-black text-white">SMS and Text Messaging</h2>
+        <p className="mt-3">
+          If you provide your phone number or contact a business using a system powered by SoCal Lead Systems, you may receive text messages related to your inquiry, appointment, quote request, service request, or missed call follow-up.
+        </p>
+        <p className="mt-3">
+          Message frequency may vary. Message and data rates may apply. You can opt out of receiving text messages at any time by replying STOP. For help, reply HELP.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-black text-white">Mobile Number Sharing</h2>
+        <p className="mt-3">
+          Mobile opt-in information and phone numbers collected for SMS communication purposes will not be shared with third parties or affiliates for marketing purposes.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-black text-white">No Sale of Personal Information</h2>
+        <p className="mt-3">
+          We do not sell, rent, or trade personal information. We may share information only with service providers necessary to operate our website, messaging systems, customer communication tools, or legal compliance.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-black text-white">Third-Party Services</h2>
+        <p className="mt-3">
+          Our website and systems may use third-party providers for hosting, analytics, email, forms, messaging, automation, or customer communication. These providers may process information only as needed to provide their services.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-black text-white">Data Security</h2>
+        <p className="mt-3">
+          We use reasonable safeguards to protect information from unauthorized access, misuse, or disclosure. However, no internet, phone, SMS, or electronic communication system is completely secure.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-black text-white">Your Choices</h2>
+        <p className="mt-3">
+          You may contact us to request access, correction, or deletion of personal information we have collected from you, subject to applicable legal and business requirements.
+        </p>
+      </section>
+
+      <ContactSection />
+    </LegalPage>
+  );
+}
+
+function TermsAndConditions() {
+  return (
+    <LegalPage title="Terms & Conditions">
+      <p className="text-slate-400">Last updated: June 28, 2026</p>
+
+      <p>
+        These Terms & Conditions explain the rules for using the SoCal Lead Systems LLC website, services, and SMS communication systems.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-black text-white">Use of Our Website and Services</h2>
+        <p className="mt-3">
+          By using our website, contacting us, requesting a demo, or using services provided by SoCal Lead Systems LLC, you agree to these Terms & Conditions.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-black text-white">Services</h2>
+        <p className="mt-3">
+          SoCal Lead Systems provides missed-call text-back automation, lead follow-up systems, SMS communication workflows, booking link routing, and related business communication services for local businesses.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-black text-white">SMS Messaging Terms</h2>
+        <p className="mt-3">
+          By providing your phone number, contacting us, requesting a demo, or contacting a business using systems powered by SoCal Lead Systems, you agree that you may receive SMS messages related to your inquiry, appointment, quote request, missed call follow-up, service request, or business communication.
+        </p>
+        <p className="mt-3">
+          Message frequency may vary. Message and data rates may apply. Carriers are not liable for delayed or undelivered messages.
+        </p>
+        <p className="mt-3">
+          You can opt out of SMS messages at any time by replying STOP. For help, reply HELP.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-black text-white">Consent to Receive Messages</h2>
+        <p className="mt-3">
+          SMS consent is not a condition of purchase. You may choose not to provide your phone number or may opt out of SMS communication at any time.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-black text-white">Privacy</h2>
+        <p className="mt-3">
+          Our collection and use of personal information is described in our{" "}
+          <a href="/privacy-policy" className="text-blue-400 underline hover:text-blue-300">
+            Privacy Policy
+          </a>
+          .
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-black text-white">No Guarantee of Results</h2>
+        <p className="mt-3">
+          SoCal Lead Systems helps businesses improve response speed and lead follow-up. We do not guarantee specific revenue, customer acquisition, appointment volume, or business results.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-black text-white">Acceptable Use</h2>
+        <p className="mt-3">
+          You agree not to use our website or services for unlawful, abusive, deceptive, fraudulent, harassing, or spam-related purposes.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-black text-white">Changes to These Terms</h2>
+        <p className="mt-3">
+          We may update these Terms & Conditions from time to time. Updates will be posted on this page with a revised “Last updated” date.
+        </p>
+      </section>
+
+      <ContactSection />
+    </LegalPage>
+  );
+}
+
+function LegalPage({ title, children }) {
+  return (
     <main className="min-h-screen bg-[#020817] px-6 py-12 text-white">
       <div className="mx-auto max-w-4xl">
         <a href="/" className="inline-flex items-center text-blue-400 hover:text-blue-300">
@@ -234,92 +394,38 @@ function PrivacyPolicy() {
 
         <div className="mt-8 rounded-[2rem] border border-white/10 bg-white/[0.035] p-8 shadow-[0_0_60px_rgba(37,99,235,0.12)] md:p-12">
           <h1 className="text-4xl font-black tracking-tight md:text-5xl">
-            Privacy Policy
+            {title}
           </h1>
 
-          <p className="mt-4 text-slate-400">
-            Last updated: June 28, 2026
-          </p>
-
           <div className="mt-10 space-y-8 text-lg leading-8 text-slate-300">
-            <p>
-              SoCal Lead Systems LLC respects your privacy. This Privacy Policy explains how we collect, use, and protect information when you visit our website, contact us, request a demo, or communicate with businesses using systems we provide.
-            </p>
-
-            <section>
-              <h2 className="text-2xl font-black text-white">Information We Collect</h2>
-              <p className="mt-3">
-                We may collect information you voluntarily provide, including your name, phone number, email address, business name, and any message or inquiry you submit through our website, phone, email, text message, or contact forms.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-black text-white">How We Use Information</h2>
-              <p className="mt-3">
-                We use information to respond to inquiries, provide services, operate missed-call text-back systems, improve our website, communicate with customers or potential customers, and support business follow-up.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-black text-white">SMS and Text Messaging</h2>
-              <p className="mt-3">
-                If you provide your phone number or contact a business using a system powered by SoCal Lead Systems, you may receive text messages related to your inquiry, appointment, quote request, service request, or missed call follow-up.
-              </p>
-              <p className="mt-3">
-                Message frequency may vary. Message and data rates may apply. You can opt out of receiving text messages at any time by replying STOP. For help, reply HELP.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-black text-white">No Sale of Personal Information</h2>
-              <p className="mt-3">
-                We do not sell, rent, or trade personal information. We may share information only with service providers necessary to operate our website, messaging systems, customer communication tools, or legal compliance.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-black text-white">Third-Party Services</h2>
-              <p className="mt-3">
-                Our website and systems may use third-party providers for hosting, analytics, email, forms, messaging, automation, or customer communication. These providers may process information only as needed to provide their services.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-black text-white">Data Security</h2>
-              <p className="mt-3">
-                We use reasonable safeguards to protect information from unauthorized access, misuse, or disclosure. However, no internet, phone, SMS, or electronic communication system is completely secure.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-black text-white">Your Choices</h2>
-              <p className="mt-3">
-                You may contact us to request access, correction, or deletion of personal information we have collected from you, subject to applicable legal and business requirements.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-black text-white">Contact Us</h2>
-              <p className="mt-3">
-                If you have questions about this Privacy Policy, contact us:
-              </p>
-              <p className="mt-3">
-                <strong>Email:</strong>{" "}
-                <a href="mailto:info@socalleadsystems.com" className="text-blue-400 underline hover:text-blue-300">
-                  info@socalleadsystems.com
-                </a>
-              </p>
-              <p>
-                <strong>Phone:</strong>{" "}
-                <a href="tel:+16194190966" className="text-blue-400 underline hover:text-blue-300">
-                  (619) 419-0966
-                </a>
-              </p>
-            </section>
+            {children}
           </div>
         </div>
       </div>
     </main>
+  );
+}
+
+function ContactSection() {
+  return (
+    <section>
+      <h2 className="text-2xl font-black text-white">Contact Us</h2>
+      <p className="mt-3">
+        If you have questions, contact SoCal Lead Systems LLC:
+      </p>
+      <p className="mt-3">
+        <strong>Email:</strong>{" "}
+        <a href="mailto:info@socalleadsystems.com" className="text-blue-400 underline hover:text-blue-300">
+          info@socalleadsystems.com
+        </a>
+      </p>
+      <p>
+        <strong>Phone:</strong>{" "}
+        <a href="tel:+16194190966" className="text-blue-400 underline hover:text-blue-300">
+          (619) 419-0966
+        </a>
+      </p>
+    </section>
   );
 }
 

@@ -50,7 +50,7 @@ export default function SoCalLeadSystemsLandingPage() {
           </div>
 
           <a
-            href="tel:+16194190966"
+            href="tel:+16199162545"
             className="inline-flex items-center gap-3 rounded-2xl bg-white px-7 py-4 text-base font-black text-slate-950 shadow-[0_0_35px_rgba(255,255,255,0.16)] transition hover:scale-105"
           >
             <PhoneCall className="h-5 w-5" />
@@ -83,7 +83,7 @@ export default function SoCalLeadSystemsLandingPage() {
 
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <a
-              href="tel:+16194190966"
+              href="tel:+16199162545"
               className="inline-flex items-center justify-center gap-3 rounded-2xl bg-white px-8 py-5 text-lg font-black text-slate-950 shadow-xl transition hover:scale-105"
             >
               Get a free demo <ArrowRight className="h-6 w-6" />
@@ -182,7 +182,7 @@ export default function SoCalLeadSystemsLandingPage() {
             <span className="bg-gradient-to-r from-blue-400 to-violet-500 bg-clip-text text-transparent">Clear ROI.</span>
           </h2>
           <p className="mt-8 max-w-lg text-lg leading-8 text-slate-200">
-            If one recovered call turns into a real job, this system can pay for itself. That is the whole point — not fancy AI theater, just fewer missed opportunities.
+            If one recovered call turns into a real client, this system will pay for itself. That is the whole point — not fancy AI theater, just fewer missed opportunities.
           </p>
 
           <div className="mt-9 space-y-6">
@@ -216,7 +216,7 @@ export default function SoCalLeadSystemsLandingPage() {
 
       <footer className="relative z-10 border-t border-white/10 px-6 py-8 text-center text-base text-slate-400">
         <p>
-          SoCal Lead Systems LLC <span className="mx-4 text-blue-500">•</span> info@socalleadsystems.com <span className="mx-4 text-blue-500">•</span> (619) 419-0966
+          SoCal Lead Systems LLC <span className="mx-4 text-blue-500">•</span> info@socalleadsystems.com <span className="mx-4 text-blue-500">•</span> (619) 916-2545
         </p>
         <p className="mt-4 flex justify-center gap-6">
           <a href="/privacy-policy" className="underline hover:text-white">
@@ -421,8 +421,8 @@ function ContactSection() {
       </p>
       <p>
         <strong>Phone:</strong>{" "}
-        <a href="tel:+16194190966" className="text-blue-400 underline hover:text-blue-300">
-          (619) 419-0966
+        <a href="tel:+16199162545" className="text-blue-400 underline hover:text-blue-300">
+          (619) 916-2545
         </a>
       </p>
     </section>

@@ -97,6 +97,20 @@ export default function SoCalLeadSystemsLandingPage() {
             </a>
           </div>
 
+          <div className="mt-6 rounded-2xl border border-blue-400/40 bg-blue-500/10 p-5">
+            <p className="text-sm font-black uppercase tracking-widest text-blue-300">Try the missed-call demo</p>
+            <a
+              href="tel:+16194190966"
+              className="mt-3 inline-flex items-center gap-3 text-2xl font-black text-white underline decoration-blue-400 underline-offset-4"
+            >
+              <PhoneCall className="h-6 w-6" />
+              Call (619) 419-0966
+            </a>
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-300">
+              By calling this demo number, you consent to receive one automated demonstration text from SoCal Lead Systems at the number you call from. Message and data rates may apply. Message frequency varies. Reply STOP to opt out or HELP for help. Consent is not a condition of purchase.
+            </p>
+          </div>
+
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <div className="flex -space-x-3">
               {["A", "B", "C", "D"].map((letter) => (
